@@ -1,0 +1,7 @@
+@import "imp.css";
+
+h1{
+  color: brown;
+  text-decoration: line-through;
+  background: green;
+  }

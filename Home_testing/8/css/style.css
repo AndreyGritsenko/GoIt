@@ -1,0 +1,8 @@
+.first_border {
+  width: 550px;
+  height: 100px;
+  background-color: #C2FFFF;
+  border: 5px ridge #0066FF;
+  padding: 10px;
+margin: 5px;
+}

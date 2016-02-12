@@ -1,0 +1,28 @@
+body {
+  margin: 5px;
+  padding: 0;
+  background-color: gray;
+}
+
+.page {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 5px groove gray;
+  padding: 20px;
+  background-color: white;
+}
+
+.pic {
+  text-align: center;
+	}
+
+.list {
+  padding-left: 60px;
+  font-size: 22px;
+  text-align: left;
+}
+
+li {
+	margin:10px;
+}

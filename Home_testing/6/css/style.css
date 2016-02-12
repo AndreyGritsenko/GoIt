@@ -1,0 +1,42 @@
+/*ol{
+  color: brown;
+  }
+p{
+  color: green;
+}
+.second{
+  color: red;
+  }
+.li-third{
+  font-size: 30px;
+}
+<-- селектор атрибутов /-->
+[type="text"] {
+  color: yellow;
+}
+/*родительское наследование по тегам
+div h1 {
+  color: blue;
+}*/
+
+/*селектор дочернего применения*/
+
+.menu{
+  font-size: 30px;
+  color: green;
+  font-weight: bold;
+}
+
+
+.menu_item>a{
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/*.menu.menu_item > a
+{
+  color: black;
+  text-decoration: none;
+  }*/
