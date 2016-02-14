@@ -1,0 +1,134 @@
+    /*Общие установки страницы и подложки*/
+
+    body {
+      background-color: gray;
+    }
+    .page {
+      width: 1000px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: white;
+      /*Белая подложка под страницу*/
+    }
+    /*Верхнее меню*/
+
+    menu.site-navigation {
+      height: 40px;
+      background: linear-gradient(#5e5e5e, #454444);
+      /* Фон для списка в виде линейного градиента */
+      list-style: none;
+      /* Стиль маркированного списка без маркеров */
+    }
+    menu.site-navigation li {
+      line-height: 40px;
+      height: 40px;
+      float: left;
+      width: 120px;
+      text-align: center;
+    }
+    menu.site-navigation li a {
+      display: block;
+      color: #fff;
+      font-family: OpenSans;
+      text-decoration: none;
+      text-shadow: 0 1px 0 #000000;
+      padding: 0 10px;
+    }
+    menu.site-navigation li a:hover {
+      border-left: 1px solid #929292;
+      border-right: 1px solid #929292;
+      background: linear-gradient(#4a4a4a, #2f2f2f);
+    }
+    /*Шрифт*/
+
+    @font-face {
+      font-family: OpenSans;
+      /* Имя шрифта */
+      src: url(../fonts/opensans.ttf);
+      /* Путь к файлу со шрифтом */
+    }
+    /*Меню с левой тороны*/
+
+    menu.leftnav {
+      margin: 0;
+      padding: 0;
+      float: left;
+      height: auto;
+      width: 25%;
+      border-top: 1px dotted #c8c8c8;
+      border-left: 1px dotted #c8c8c8;
+      border-right: 1px dotted #c8c8c8;
+      list-style: none;
+      /* Стиль маркированного списка без маркеров */
+    }
+    menu.leftnav li {
+      line-height: 40px;
+      height: 40px;
+      border-bottom: 1px dotted #c8c8c8;
+      width: auto;
+      text-align: left;
+    }
+    menu.leftnav li a {
+      display: block;
+      color: black;
+      font-family: OpenSans;
+      text-decoration: none;
+    }
+    menu.leftnav li a:hover {
+      background-color: #f9f9f9;
+      padding-left: 15px;
+      font-weight: bold;
+    }
+    .pic_text {
+      float: right;
+      margin: 0;
+      padding: 0;
+      width: 70%;
+      font-family: OpenSans;
+    }
+    .bikepic {
+      float: right;
+      clear: none;
+      /* Запрет обтекания текста поплавка*/
+      padding: 100px;
+      background-color: white;
+      border: 1px dotted #c8c8c8;
+    }
+    /*Нижнее меню*/
+
+    menu.footnav {
+      margin-top: 650px;
+      height: 40px;
+      background-color: #e1e1e1;
+      /* Фон для списка в виде линейного градиента */
+      list-style: none;
+      /* Стиль маркированного списка без маркеров */
+    }
+    menu.footnav li {
+      line-height: 40px;
+      height: 40px;
+      float: left;
+      width: 120px;
+      text-align: center;
+    }
+    menu.footnav li a {
+      display: block;
+      color: black;
+      font-family: OpenSans;
+      text-decoration: none;
+      padding: 0 10px;
+    }
+    menu.footnav li a:hover {
+      text-decoration: underline;
+    }
+    /*После нижнего меню, добавляем 2014 All rights reserved*/
+
+    menu.footnav::after {
+      float: right;
+      content: '2014 © All rights reserved';
+      font-family: OpenSans;
+      text-decoration: none;
+      padding: 0 10px;
+      line-height: 40px;
+      height: 40px;
+    }
