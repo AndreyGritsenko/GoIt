@@ -88,7 +88,7 @@
     }
     .bikepic {
       float: right;
-      clear: none;
+      clear: both;
       /* Запрет обтекания текста поплавка*/
       padding: 100px;
       background-color: white;
@@ -103,6 +103,7 @@
       /* Фон для списка в виде линейного градиента */
       list-style: none;
       /* Стиль маркированного списка без маркеров */
+      clear: both;
     }
     menu.footnav li {
       line-height: 40px;
