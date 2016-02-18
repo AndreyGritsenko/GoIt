@@ -152,13 +152,13 @@ clear: both;
 
 
     menu.line_menu {
-      clear: both;
-      margin: 0 auto;
+      position: relative;
+      /*clear: both;*/
+      /*margin: 0 auto;*/
       height: 30px;
       background-color: #484848;
       list-style: none;
-      width: 100%;
-
+      /*width: auto;*/
     }
     menu.line_menu li {
       line-height: 30px;
@@ -167,6 +167,7 @@ clear: both;
       text-align: left;
       font-size: 12px;
       font-family: Tahoma;
+      padding: 0 0px;
     }
     menu.line_menu li a {
       display: block;
