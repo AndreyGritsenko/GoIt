@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div class="clear">
+    <table>
+      <tr class="angle-left-up angle-right-up">
+        <td class="angle-left-up" colspan="2">Cell 1</td>
+        <td class="angle-right-up" colspan="3">Cell 3</td>
+        <td class="yellow angle-right-up" colspan="3">Cell 6</td>
+      </tr>
+      <tr class="left right">
+        <td class="left" rowspan="2">Cell 1</td>
+        <td colspan="4" rowspan="4" class="red">Cell 2</td>
+        <td class="yellow right" colspan="3" rowspan="2">Cell 6</td>
+      </tr>
+      <tr class="left right">
+      </tr>
+      <tr class="left right" >
+        <td class="left" rowspan="3">Cell 1</td>
+        <td rowspan="2">Cell 6</td>
+        <td class="right" rowspan="2">Cell 7</td>
+      </tr>
+      <tr class="left right">
+
+      </tr>
+      <tr class="left right">
+        <td rowspan="2" class="black">Cell 2</td>
+        <td rowspan="2" class="black">Cell 3</td>
+        <td colspan="2">Cell 4</td>
+        <td class="right" colspan="2">Cell 6</td>
+      </tr>
+      <tr class="right angle-left-bottom">
+        <td rowspan="3" class="yellow angle-left-bottom">Cell 1</td>
+        <td colspan="2">Cell 4</td>
+        <td rowspan="2" class="blue right" colspan="2">Cell 6</td>
+
+      </tr>
+      <tr class="right angle-left-bottom">
+        <td class="angle-left-bottom" colspan="2" rowspan="2">Cell 2</td>
+        <td colspan="2" class="black">Cell 4</td>
+      </tr>
+      <tr class="angle-left-bottom angle-right-bottom">
+        <td class="angle-right-bottom" colspan="4">Cell 4</td>
+      </tr>
+    </table>
+</div>
+  </body>
+</html>
