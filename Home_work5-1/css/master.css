@@ -1,0 +1,121 @@
+    * {
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+      font-family: HelveticaNeue;
+      color: white;
+    }
+    /*пришиваем шрифт*/
+    @font-face {
+      font-family: HelveticaNeue;
+      src: url(../fonts/HelveticaNeueCyr-Light.otf);
+    }
+    /*менюшка и навигация*/
+    nav {
+      position: relative;
+      width: 1215px;
+      margin: 0 auto;
+    }
+    menu.site-navigation {
+      line-height: 35px;
+      text-align: right;
+      height: 35px;
+      background: #074e8c;
+      /* Фон для списка в виде линейного градиента */
+      list-style: none;
+      /* Стиль маркированного списка без маркеров */
+    }
+    menu.site-navigation li {
+      display: inline-block;
+      line-height: 35px;
+      width: auto;
+      text-align: center;
+      padding-right: 15px;
+    }
+    a.last_main {
+      border-right: 1px solid white;
+    }
+    img.flag {
+      position: relative;
+      top: 5px;
+      padding-right: 20px;
+    }
+    menu.site-navigation li a {
+      display: inline-block;
+      line-height: 35px;
+      text-decoration: none;
+      padding: 0 15px;
+      height: 35px;
+    }
+    menu.site-navigation li a:hover {
+      background: #4eabda;
+    }
+    .underline {
+      text-decoration: underline;
+    }
+    /*форма над затененным прямоугольником*/
+    div.overlap {
+      position: absolute;
+      float: left;
+      margin: 0 auto;
+      left: 30%;
+      right: 30%;
+      top: 15%;
+      width: 500px;
+      height: 500px;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: auto;
+    }
+    /*голова формы*/
+    .olhead {
+      margin: 20px;
+    }
+    /*тело формы*/
+    .olbody {
+      padding: 15px;
+    }
+    .middle {
+      display: inline;
+      margin: 0 auto;
+      width: 125px;
+    }
+    /*попытка при помощи псевдоэлементов впихнуть OU в полосу разделения*/
+    h3:before, h3:after {
+      content: "";
+      margin: 2px;
+      position: relative;
+      display: inline-block;
+      width: 20%;
+      height: 1px;
+      vertical-align: middle;
+      border-bottom: 1px solid rgb(169, 169, 169);
+      box-shadow: 0px 1px 4px 0px #000;
+    }
+    /*редактирование стиля самого OU*/
+    span.ou {
+      font-size: 14px;
+      color: darkgrey;
+    }
+    /*редактирование оформления форм для ввода*/
+    input.textform {
+      height: 32px;
+      margin: 0.5%;
+      text-align: left;
+      background-color: black;
+    }
+    /*свечение при фокусировке*/
+    input.textform:focus {
+      background-color: rgba(0, 60, 189, 0.5);
+      box-shadow: 0px 0px 10px 3px rgba(0, 60, 189, 0.5);
+    }
+    .spam {
+      display: inline-block;
+      font-size: 14px;
+      padding: 12px;
+    }
+    /*ноги формы*/
+    .olfooter {
+      margin: 15px;
+      font-size: 12px;
+      line-height: 2;
+    }
