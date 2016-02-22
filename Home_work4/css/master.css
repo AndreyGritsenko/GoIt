@@ -4,8 +4,6 @@
     }
     body {
       background-color: #0C739F;
-      min-height:  1020px;
-      padding-bottom: 30px;;
     }
     div.background {
       width: auto;;
@@ -158,10 +156,8 @@
     .colums {
     }
     .copyright {
-      position: relative;
       left: 40%;
       bottom: 10px;
-      position: relative;
       color: white;
       float: left;
     }
