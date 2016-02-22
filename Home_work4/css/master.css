@@ -1,34 +1,40 @@
     * {
-      margin: 0;
       padding: 0;
+      margin: 0;
     }
-    ul.background1 {
-      position: static;
+    body {
+      background-color: #0C739F;
+      min-height:  1020px;
+      padding-bottom: 30px;;
+    }
+    div.background {
+      width: auto;;
+    }
+    div.background1 {
       height: 24px;
       background-color: #128aa7;
       border-bottom: 2px solid #5ef0ff;
     }
-    ul.background2 {
-      position: relative;
+    div.background2 {
       height: 150px;
       background-image: linear-gradient(#11cde1, #fff);
-    }
-    ul.background3 {
       position: relative;
-      height: 810px;
+    }
+    div.background3 {
+      height: 150px;
       background-image: linear-gradient(#40c6d3, #0c739f);
+      position: relative;
     }
     div.workspace {
       position: absolute;
       top: 0;
       left: 12%;
-      margin: 0 auto;
       width: 75%;
       background-color: white;
       list-style-type: none;
       border: 2px solid black;
       box-shadow: 0px 1px 6px 0px #000000;
-      z-index: 5;
+      margin: 0 auto;
     }
     .logo {
       float: left;
@@ -72,9 +78,10 @@
       border-top: 1px solid #138aa7;
       border-bottom: 1px solid #138aa7;
       width: 100%;
+      display: block;
     }
     menu.menu {
-      margin-top: -3px;
+      margin-top: 0px;
       background: #484848;
       width: 100%;
       float: left;
@@ -83,13 +90,13 @@
       border-top: 1px solid #929292;
       border-bottom: 1px solid #0B0B0B;
       box-shadow: 0px 1px 6px 0px #000000;
-      clear: both;
+      overflow: hidden;
     }
     .menu a {
       color: #fff;
       text-decoration: none;
       text-align: center;
-      margin: 0 20px 0 20px;
+      margin: 0 20px;
     }
     .menu a:hover {
       color: #fff;
@@ -117,7 +124,7 @@
     }
     h1 {
       display: inline-block;
-      padding-bottom: 18px;
+      padding-bottom: 10px;
       text-align: center;
       font-family: Tahoma;
       color: #444e45;
@@ -133,18 +140,33 @@
     .textbox {
       border: 1px solid #c9cace;
       background-color: #edeef0;
-      width: 20%;
+      min-width:150px;
+      max-width:250px;
       padding: 10px;
       line-height: 2;
       font-family: Tahoma;
       color: #444e45;
       font-size: 14px;
-      z-index: 1;
+      width: 20%;
+    }
+    .content {
+      padding: 8px;
+      margin: 0 auto;
+      max-width: 500px;
+      overflow: hidden;
+    }
+    .colums {
     }
     .copyright {
       position: relative;
-      top: 95%;
       left: 40%;
+      bottom: 10px;
+      position: relative;
       color: white;
-      display: inline-block;
+      float: left;
+    }
+    .clearfix:after {
+      display: block;
+      content: ' ';
+      clear: both;
     }
