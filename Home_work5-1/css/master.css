@@ -6,11 +6,13 @@
       color: white;
     }
     /*пришиваем шрифт*/
+
     @font-face {
       font-family: HelveticaNeue;
       src: url(../fonts/HelveticaNeueCyr-Light.otf);
     }
     /*менюшка и навигация*/
+
     nav {
       position: relative;
       width: 1215px;
@@ -50,10 +52,14 @@
     menu.site-navigation li a:hover {
       background: #4eabda;
     }
+    .background {
+      background-image: url("../pic/background.png");;
+    }
     .underline {
       text-decoration: underline;
     }
     /*форма над затененным прямоугольником*/
+
     div.overlap {
       position: absolute;
       float: left;
@@ -62,15 +68,20 @@
       right: 30%;
       top: 15%;
       width: 500px;
-      height: 500px;
+      height: 630px;
       background-color: rgba(0, 0, 0, 0.5);
       overflow: auto;
     }
     /*голова формы*/
+
     .olhead {
-      margin: 20px;
+      margin: 25px;
+    }
+    .facebook {
+      margin: 15px;
     }
     /*тело формы*/
+
     .olbody {
       padding: 15px;
     }
@@ -80,6 +91,7 @@
       width: 125px;
     }
     /*попытка при помощи псевдоэлементов впихнуть OU в полосу разделения*/
+
     h3:before, h3:after {
       content: "";
       margin: 2px;
@@ -92,18 +104,25 @@
       box-shadow: 0px 1px 4px 0px #000;
     }
     /*редактирование стиля самого OU*/
+
     span.ou {
       font-size: 14px;
       color: darkgrey;
     }
     /*редактирование оформления форм для ввода*/
+
     input.textform {
-      height: 32px;
-      margin: 0.5%;
+      padding: 12px;
+      height: 10px;
       text-align: left;
       background-color: black;
+      margin: 2%;
     }
+    /*ноги формы*/
+
+    input.textform {}
     /*свечение при фокусировке*/
+
     input.textform:focus {
       background-color: rgba(0, 60, 189, 0.5);
       box-shadow: 0px 0px 10px 3px rgba(0, 60, 189, 0.5);
@@ -113,9 +132,23 @@
       font-size: 14px;
       padding: 12px;
     }
+    .button-blue {
+      width: 150px;
+      height: 35px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#50AEDB), to(#2E7AC4));
+      border: none;
+    }
+    .button-blue:hover {
+      background: #81a8cb;
+      background: -webkit-gradient(linear, left top, left bottom, from(#2E7AC4), to(#50AEDB));
+    }
+    .button-blue:active {
+      background: #0F5AA2;
+    }
     /*ноги формы*/
+
     .olfooter {
-      margin: 15px;
+      margin: 20px;
       font-size: 12px;
       line-height: 2;
     }
