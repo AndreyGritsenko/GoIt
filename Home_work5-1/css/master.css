@@ -5,6 +5,12 @@
       font-family: HelveticaNeue;
       color: white;
     }
+    /*задаем фоновое изображение для тела*/
+    body {
+      background: url("../pic/background.png");
+      background-repeat: no-repeat;
+      background-position: top;
+    }
     /*пришиваем шрифт*/
 
     @font-face {
@@ -41,6 +47,7 @@
       position: relative;
       top: 5px;
       padding-right: 20px;
+      border: none; 
     }
     menu.site-navigation li a {
       display: inline-block;
@@ -52,9 +59,7 @@
     menu.site-navigation li a:hover {
       background: #4eabda;
     }
-    .background {
-      background-image: url("../pic/background.png");;
-    }
+
     .underline {
       text-decoration: underline;
     }
