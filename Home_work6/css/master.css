@@ -1,0 +1,403 @@
+/*clearfix для плавающих элементов*/
+.clearfix:after {
+  display: inline-block;
+  content: "";
+  clear: both;
+}
+/*Обортка для первой линии*/
+body > div {
+  margin: 16px auto;
+  width: 909px;
+  font-family: Arial, sans-serif;
+}
+/*Раздел с телефонами*/
+body > div > header > div.tel {
+  display: inline-block;
+  font-size: 17px;
+  letter-spacing: 0.9px;
+  color: #5e696d;
+  margin: 7px 0px 0px 5px;
+  vertical-align: bottom;;
+}
+body > div > header > div.tel > p > img {
+  vertical-align: middle;
+}
+/*Раздел авторизации/регистрации*/
+body > div > header > div.avtorization {
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: #114266;
+  box-shadow: 3px 3px 3px #b4b4b4;;
+  margin: 2px 0px 0px 14px;
+  vertical-align: top;
+}
+body > div > header > div.avtorization > div {
+  display: inline-block;
+}
+body > div > header > div.avtorization > div > img {
+  display: inherit;
+  vertical-align: middle;
+  margin: 3px;
+}
+body > div > header > div.avtorization > nav {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 3px;
+}
+body > div > header > div.avtorization > nav > li {
+  display: inherit;
+  font-size: 12px;
+}
+body > div > header > div.avtorization > form {
+  border: none;
+  display: inline;
+  vertical-align: baseline;
+}
+input.login, .password {
+  font-size: 12px;
+  padding-left: 2px;
+}
+body > div > header > div.avtorization > nav > li > a {
+  text-decoration: none;
+  color: white;
+  }
+  /*Разделитель между входом и регистрацтей*/
+body > div.wrapper > header > div.avtorization > nav > li:nth-child(1):after{
+    content: " | ";
+    color: white;
+    font-size: 11px;
+  }
+  /*Подчеркивание "забыли пароль"*/
+body > div.wrapper > header > div.avtorization > nav > li:nth-child(3) {
+    text-decoration: underline;
+    padding: 0px 9px 0 8px;
+  }
+body > div > header > div.mapsite {
+  display: inline-block;
+  margin: 0px 0px 0px 12px;
+  box-shadow: 3px 3px 3px #b4b4b4;
+  border-radius: 15px;
+  padding: 3px 4px;
+  border: 1px solid #b4b4b4;
+  vertical-align: top;
+}
+body > div > header > div.mapsite > a {
+  padding: 0px 3px;
+}
+/*Главное лого*/
+body > div.wrapper > div.logo {
+  margin-top: 8px;
+}
+/*Главное меню*/
+body > div.wrapper > div.main_nav > nav {
+  margin: 3px auto;
+  /* width: 559px; */;
+  position: relative;
+}
+body > div.wrapper > div.main_nav > nav > menu  {
+  height: 30px;
+  text-align: right;
+  box-shadow: 0px 0px 5px #505860, inset 0px 5px 5px #797979;
+  border-radius: 5px;
+  background: linear-gradient(#2d3236 0% ,#000000 100%);
+  padding: 2px 0px;
+  line-height: 25px;
+}
+body > div.wrapper > div.main_nav > nav > menu > li {
+  display: inline-block;
+  line-height: 30px;
+  width: auto;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+}
+/*картинка корзтны*/
+body > div > div.main_nav > nav > menu > div > a > img {
+  border: none;
+  position: relative;
+  top: 4px;
+}
+body > div.wrapper > div.main_nav > nav > menu > li > a {
+  display: inline-block;
+  line-height: 25px;
+  text-decoration: none;
+  padding: 0px 11px 0px 11px;
+  height: 25px;
+  color: white;
+  font-size: 14px;
+}
+body > div.wrapper > div.main_nav > nav > menu > li > a:hover {
+  background: linear-gradient(#1f6787 0% ,#0c3357 100%);
+  border-radius: 15px;
+}
+/*Корзина со стоимостью*/
+body > div > div.main_nav > nav > menu > div {
+  display: inline-block;
+  padding: 0px 20px 0px 56px;
+}
+body > div > div.main_nav > nav > menu > div > a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+body > div > div.main_nav > nav > menu > div > a > span {
+  color: #0d5a8f;
+}
+/*filter*/
+/*filter_avto*/
+body > div.wrapper > div.filter > section.filter_avto {
+  display: inline-block;
+  margin: 9px 0px 0px 4px;
+  box-shadow: 3px 3px 3px #b4b4b4;
+  border-radius: 15px;
+  border: 1px solid #b4b4b4;
+  vertical-align: top;
+  width: 412px;
+  height: 132px;
+  overflow: auto;
+}
+/*filter_tire*/
+body > div.wrapper > div.filter > section.filter_tire {
+  display: inline-block;
+  margin: 8px 0px 0px 11px;
+  box-shadow: 3px 3px 3px #b4b4b4;
+  border-radius: 15px;
+  border: 1px solid #b4b4b4;
+  vertical-align: top;
+  width: 191px;
+  height: 133px;
+  overflow: auto;
+}
+/*filter_disk*/
+body > div.wrapper > div.filter > section.filter_disk {
+  display: inline-block;
+  margin: 7px 0px 0px 5px;
+  box-shadow: 3px 3px 3px #b4b4b4;
+  border-radius: 15px;
+  border: 1px solid #b4b4b4;
+  vertical-align: top;
+  width: 256px;
+  height: 134px;
+  overflow: auto;
+}
+
+/*body columns*/
+/*Общие элементы меню*/
+/*Общий элемент для правого и левого меню - иконка диска*/
+body > div.wrapper > div.body > div > div > div > div > span::before {
+  background-image: url(../pic/icon-disk.png);
+  content: "";
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+  display: inline-block;;
+  padding: 0px 2px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+/*Общий элемент для правого и левого меню - иконка каталога*/
+body > div.wrapper > div.body > div > div > div > span::before {
+  background-image: url(../pic/icon-katalog.png);
+  content: "";
+  width: 20px;
+  height: 21px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 0px 2px;
+  vertical-align: middle;
+  margin-top: 0px;;
+}
+/**/
+
+
+/*left-column*/
+body > div.wrapper > div.body > div > div.left-menu {
+  background-color: #edeef0;
+  min-width:150px;
+  max-width:250px;
+  padding: 0px;
+  /*line-height: 2;*/
+  color: #114165;
+  font-size: 14px;
+  font-weight: 500;
+  width: 20%;
+  float: left;
+  margin: 22px 0px 0px 0px;
+}
+body > div.wrapper > div.body > div > div.left-menu> div > span {
+  display: inline-block;
+  padding: 2px 3px;
+  border: 1px solid #b4b4b4;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #b4b4b4;
+  margin: 0px 0px 0px 0px;
+  vertical-align: baseline;
+  width: 97%;
+  margin-top: 0px;
+  margin-bottom: 13px;
+  font-size: 13px;
+}
+body > div.wrapper > div.body > div > div.left-menu > div > div > ul {
+  line-height: 1.8;
+  padding-left: 53px;
+}
+body > div.wrapper > div.body > div > div.left-menu > div > div > ul > li {
+  list-style: circle;
+  line-height: 1.9;
+}
+body > div.wrapper > div.body > div > div.left-menu > div > div > ul > li:hover {
+  font-weight: 600;
+  font-style: italic;
+
+}
+body > div.wrapper > div.body > div > div.left-menu > div > div > span {
+  display: block;
+  padding: 3px 3px;
+  border: 1px solid #b4b4b4;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #b4b4b4;
+  margin: 3px 0px 0px 0px;
+  vertical-align: baseline;
+  width: 80%;
+}
+body > div.wrapper > div.body > div > div.left-menu > div > div {
+  padding: 0px 0px 0px 0px;
+}
+body > div.wrapper > div.body > div > div.left-menu > div > div > ul > li > a {
+  text-decoration: none;
+  color: #114165;
+  /*body > div.wrapper > div.body > div > div > div > span {
+  display: inline-block;
+  padding: 0px 3px;
+  border: 1px solid #b4b4b4;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #b4b4b4;
+  margin: 0px 0px 0px 0px;
+  vertical-align: middle;;
+  width: 96%;
+  margin-top: 0px;
+  margin-bottom: 13px;
+  font-size: 13px;
+  }*/
+}
+
+
+/*right-column*/
+body > div.wrapper > div.body > div > div.right-menu {
+  float: right;
+  border: 1px solid #c9cace;
+  background-color: #edeef0;
+  padding: 0px;
+  line-height: 1.9;
+  color: #444e45;
+  font-size: 14px;
+  width: 20%;
+  margin-top: 20px;
+}
+body > div > div.body > div > div.right-menu > div > div.right-menu {
+  display: block;
+  padding: 0px 2px;
+  border: 1px solid #b4b4b4;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #b4b4b4;
+  margin: 0px 0px 0px 0px;
+  vertical-align: baseline;
+  width: 77%;
+}
+body > div.wrapper > div.body > div > div.right-menu > div > div > label {
+  display: block;
+  font-size: 13px;
+}
+body > div.wrapper > div.body > div > div.right-menu > div > div {
+  padding-left: 17px;
+}
+
+/*center-colon*/
+body > div.wrapper > div.body > div > div.content {
+  min-width:56%;
+  font-family: Tahoma;
+  background: linear-gradient(#e4e7e8 0% ,#93a7b0 100%);
+  color: #000;
+  max-width:58%;
+  margin:19px 0px 0px 6px;
+  display:-webkit-inline-box;
+  border-radius: 3px;
+  overflow:hidden;
+  font-size:14px;
+  padding:0px 0px 17px 0px;
+}
+body > div > div.body > div > div.content > div.row {
+  display: inherit;
+  padding: 13px;;
+}
+body > div.wrapper > div.body > div > div.content > div > div {
+  padding: 1px 16px 2px 15px;
+  text-align: center;
+  line-height: 15px;
+}
+body > div.wrapper > div.body > div > div.content > div > div > h2 {
+  color: #206988;
+  font-size: large;
+
+}
+body > div.wrapper > div.body > div > div.content > div > div > h3 {
+  font-size: 13px
+}
+/*Белое окаймление товаров*/
+body > div.wrapper > div.body > div > div.content > div.row > div > div {
+  background: #fff 100%;
+  width: 134px;
+  height: 124px;
+  display: inline-block;
+  border-radius: 10px;
+}
+/*Цена*/
+body > div.wrapper > div.body > div > div.content > div.row > div > p {
+  color: #114165;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 900;
+  padding-top: 5px;;
+}
+
+/*footer*/
+body > div > footer > img {
+  display: inherit;
+  margin: 34px auto;
+
+}
+body > div.wrapper > footer > div.bottom_menu {
+  margin: 0 auto;
+
+}
+body > div.wrapper > footer > div.bottom_menu > nav {
+height: 88px;
+text-align: center;
+background: #213a4d;
+box-shadow: 2px 2px 5px #505860;
+}
+body > div > footer > div.bottom_menu > nav > li {
+  text-align: center;
+  display: inline;
+}
+body > div.wrapper > footer > div.bottom_menu > nav > li > a {
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+  padding: 0px 0px;
+}
+body > div.wrapper > footer > div.bottom_menu > nav > li > a::after {
+    content: "|";
+    padding: 0  7px;
+    color: white;
+    font-size: 14px;
+  }
+  body > div.wrapper > footer > div.bottom_menu > nav > li > a:hover {
+    color: #448ca8;
+  }
+body > div > footer > div > nav > div {
+  padding: 14px;
+  color: #554047;
+  font-size: 12px;
+
+}
