@@ -406,6 +406,7 @@ body > div.wrapper > div.filter > section.filter_disk > div.filter_disk_third-co
 body > div.wrapper > div.filter > section.filter_disk > div.filter_disk_third-column > div > select {
   width: 75%;
   margin-top: 2px;
+  font-size: 11px;
 }
 body > div.wrapper > div.filter > section.filter_disk > div.filter_disk_footer {
   float: right;
