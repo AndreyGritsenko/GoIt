@@ -54,7 +54,7 @@ body > div > header > div.avtorization > form {
   display: inline;
   vertical-align: baseline;
 }
-input.login, .password {
+body > div > header > div.avtorization > form > input.login, .password {
   font-size: 12px;
   padding-left: 2px;
 }
@@ -87,7 +87,7 @@ body > div > header > div.mapsite > a {
 }
 /*Главное лого*/
 body > div.wrapper > div.logo {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 /*Главное меню*/
 body > div.wrapper > div.main_nav > nav {
@@ -152,31 +152,31 @@ body > div.wrapper > div.filter > section.filter_avto {
   border-radius: 15px;
   border: 1px solid #b4b4b4;
   vertical-align: top;
-  width: 412px;
+  width: 45.5%;
   height: 132px;
   overflow: auto;
 }
 /*filter_tire*/
 body > div.wrapper > div.filter > section.filter_tire {
   display: inline-block;
-  margin: 8px 0px 0px 11px;
+  margin: 8px 0px 0px 9px;
   box-shadow: 3px 3px 3px #b4b4b4;
   border-radius: 15px;
   border: 1px solid #b4b4b4;
   vertical-align: top;
-  width: 191px;
+  width: 21%;
   height: 133px;
   overflow: auto;
 }
 /*filter_disk*/
 body > div.wrapper > div.filter > section.filter_disk {
   display: inline-block;
-  margin: 7px 0px 0px 5px;
+  margin: 8px 0px 0px 6px;
   box-shadow: 3px 3px 3px #b4b4b4;
   border-radius: 15px;
   border: 1px solid #b4b4b4;
   vertical-align: top;
-  width: 256px;
+  width: 29%;
   height: 134px;
   overflow: auto;
 }
@@ -193,7 +193,7 @@ body > div.wrapper > div.body > div > div > div > div > span::before {
   display: inline-block;;
   padding: 0px 2px;
   vertical-align: middle;
-  margin-top: -3px;
+  margin-top: -1px;
 }
 /*Общий элемент для правого и левого меню - иконка каталога*/
 body > div.wrapper > div.body > div > div > div > span::before {
@@ -207,163 +207,168 @@ body > div.wrapper > div.body > div > div > div > span::before {
   vertical-align: middle;
   margin-top: 0px;;
 }
-/**/
-
-
-/*left-column*/
-body > div.wrapper > div.body > div > div.left-menu {
+/*Общий установки блока панелей слева-справа*/
+body > div.wrapper > div.body > div > div {
   background-color: #edeef0;
-  min-width:150px;
-  max-width:250px;
   padding: 0px;
-  /*line-height: 2;*/
   color: #114165;
   font-size: 14px;
   font-weight: 500;
   width: 20%;
-  float: left;
   margin: 22px 0px 0px 0px;
 }
-body > div.wrapper > div.body > div > div.left-menu> div > span {
+/*Общий блок обводки загаловков*/
+body > div > div.body > div > div.left-menu > div > span,
+body > div > div.body > div > div.right-menu > div > span {
   display: inline-block;
-  padding: 2px 3px;
+  padding: 2px 2px;
   border: 1px solid #b4b4b4;
   border-radius: 15px;
   box-shadow: 3px 3px 3px #b4b4b4;
   margin: 0px 0px 0px 0px;
-  vertical-align: baseline;
   width: 97%;
   margin-top: 0px;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   font-size: 13px;
+  line-height: 1;
+}
+/*Общий блок обводки подзагаловков*/
+body > div > div.body > div > div > div > div > span {
+  display: inline-block;
+  padding: 2px 2px;
+  border: 1px solid #b4b4b4;
+  border-radius: 15px;
+  margin: 0px 0px 0px 0px;
+  width: 79%;
+  margin-top: 0px;
+  font-size: 13px;
+  line-height: 1;
+  margin-bottom: 0px;
+}
+
+
+/*left-column*/
+body > div.wrapper > div.body > div > div.left-menu {
+  float: left;
 }
 body > div.wrapper > div.body > div > div.left-menu > div > div > ul {
-  line-height: 1.8;
-  padding-left: 53px;
+  padding-left: 55px;
 }
 body > div.wrapper > div.body > div > div.left-menu > div > div > ul > li {
   list-style: circle;
-  line-height: 1.9;
+  line-height: 1.8;
 }
-body > div.wrapper > div.body > div > div.left-menu > div > div > ul > li:hover {
+body > div.wrapper > div.body > div > div.left-menu > div > div > ul > li > a:hover {
+  font-size: 13px;
   font-weight: 600;
   font-style: italic;
-
-}
-body > div.wrapper > div.body > div > div.left-menu > div > div > span {
-  display: block;
-  padding: 3px 3px;
-  border: 1px solid #b4b4b4;
-  border-radius: 15px;
-  box-shadow: 3px 3px 3px #b4b4b4;
-  margin: 3px 0px 0px 0px;
-  vertical-align: baseline;
-  width: 80%;
-}
-body > div.wrapper > div.body > div > div.left-menu > div > div {
-  padding: 0px 0px 0px 0px;
 }
 body > div.wrapper > div.body > div > div.left-menu > div > div > ul > li > a {
   text-decoration: none;
   color: #114165;
-  /*body > div.wrapper > div.body > div > div > div > span {
-  display: inline-block;
-  padding: 0px 3px;
-  border: 1px solid #b4b4b4;
-  border-radius: 15px;
-  box-shadow: 3px 3px 3px #b4b4b4;
-  margin: 0px 0px 0px 0px;
-  vertical-align: middle;;
-  width: 96%;
-  margin-top: 0px;
-  margin-bottom: 13px;
-  font-size: 13px;
-  }*/
+  font-size: 12px;
 }
-
 
 /*right-column*/
 body > div.wrapper > div.body > div > div.right-menu {
   float: right;
-  border: 1px solid #c9cace;
-  background-color: #edeef0;
-  padding: 0px;
-  line-height: 1.9;
-  color: #444e45;
-  font-size: 14px;
-  width: 20%;
-  margin-top: 20px;
-}
-body > div > div.body > div > div.right-menu > div > div.right-menu {
-  display: block;
-  padding: 0px 2px;
-  border: 1px solid #b4b4b4;
-  border-radius: 15px;
-  box-shadow: 3px 3px 3px #b4b4b4;
-  margin: 0px 0px 0px 0px;
-  vertical-align: baseline;
-  width: 77%;
 }
 body > div.wrapper > div.body > div > div.right-menu > div > div > label {
   display: block;
-  font-size: 13px;
+  font-size: 12px;
+  padding: 4px 0px 0px 23px;
+  line-height: 1.6;;
 }
-body > div.wrapper > div.body > div > div.right-menu > div > div {
-  padding-left: 17px;
+body > div.wrapper > div.body > div > div.right-menu > div > div.right-menu_subheader_disk {
+padding-top: 8px;
 }
+
+
+body > div > div.body > div > div.right-menu > div > div.right-menu_subheader_tire > span,
+body > div > div.body > div > div.right-menu > div > div.right-menu_subheader_disk > span {
+  margin: 0px 0px 0px 16px;
+  width: 71%;
+}
+.button-blue{
+   text-decoration:none;
+   text-align:center;
+   padding:7px 13px;
+   border:none;
+   -webkit-border-radius:15px;
+   -moz-border-radius:15px;
+   border-radius: 15px;
+   font:11px Arial, Helvetica, sans-serif;
+   color:#ffffff;
+   background-color:#1f6887;
+   background-image: -moz-linear-gradient(top, #1f6887 0%, #0d365a 100%);
+   background-image: -webkit-linear-gradient(top, #1f6887 0%, #0d365a 100%);
+   background-image: -o-linear-gradient(top, #1f6887 0%, #0d365a 100%);
+   background-image: -ms-linear-gradient(top, #1f6887 0% ,#0d365a 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d365a', endColorstr='#0d365a',GradientType=0 );
+   background-image: linear-gradient(#1f6887 0% ,#0d365a 100%);
+   -moz-box-shadow: 2px 2px 4px #bababa,  inset 0px 0px 3px #ffffff;
+   box-shadow:2px 2px 4px #bababa, inset 0px 0px 3px #ffffff;
+   margin:15px 24px;
+  }
 
 /*center-colon*/
 body > div.wrapper > div.body > div > div.content {
-  min-width:56%;
+  min-width:58%;
   font-family: Tahoma;
   background: linear-gradient(#e4e7e8 0% ,#93a7b0 100%);
   color: #000;
   max-width:58%;
-  margin:19px 0px 0px 6px;
+  margin:17px 0px 0px 11px;
   display:-webkit-inline-box;
   border-radius: 3px;
   overflow:hidden;
   font-size:14px;
-  padding:0px 0px 17px 0px;
+  padding:0px 0px 25px 0px;
+  text-align:center;
+  vertical-align:middle;
 }
 body > div > div.body > div > div.content > div.row {
   display: inherit;
-  padding: 13px;;
+  padding: 14px 0px 12px 0px;
 }
 body > div.wrapper > div.body > div > div.content > div > div {
-  padding: 1px 16px 2px 15px;
+  padding: 0px 21px 0px 12px;
   text-align: center;
-  line-height: 15px;
 }
 body > div.wrapper > div.body > div > div.content > div > div > h2 {
   color: #206988;
-  font-size: large;
-
+  font-size: large;;
 }
 body > div.wrapper > div.body > div > div.content > div > div > h3 {
-  font-size: 13px
+  font-size: 13px;;
 }
-/*Белое окаймление товаров*/
+/*Белое окаймление товаров для рисунка*/
 body > div.wrapper > div.body > div > div.content > div.row > div > div {
   background: #fff 100%;
-  width: 134px;
-  height: 124px;
+  width: 135px;
+  height: 127px;
   display: inline-block;
   border-radius: 10px;
+}
+/*Картиинка*/
+body > div.wrapper > div.body > div > div.content > div > div > div > img {
+  height: 94%;
+  padding-top: 4px;;
 }
 /*Цена*/
 body > div.wrapper > div.body > div > div.content > div.row > div > p {
   color: #114165;
-  font-size: 14px;
+  font-size: 15px;
   font-style: italic;
   font-weight: 900;
-  padding-top: 5px;;
+  padding-top: 3px;
+  line-height: 1;;
 }
 
 /*footer*/
 body > div > footer > img {
   display: inherit;
-  margin: 34px auto;
+  margin: 35px 24px 25px 116px;
 
 }
 body > div.wrapper > footer > div.bottom_menu {
@@ -371,24 +376,27 @@ body > div.wrapper > footer > div.bottom_menu {
 
 }
 body > div.wrapper > footer > div.bottom_menu > nav {
-height: 88px;
-text-align: center;
-background: #213a4d;
-box-shadow: 2px 2px 5px #505860;
-}
+  height: 100px;
+  text-align: center;
+  background: #213a4d;
+  box-shadow: 2px 2px 5px #505860;
+  padding-top: 10px;
+  }
 body > div > footer > div.bottom_menu > nav > li {
   text-align: center;
   display: inline;
 }
 body > div.wrapper > footer > div.bottom_menu > nav > li > a {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
   color: white;
   padding: 0px 0px;
 }
-body > div.wrapper > footer > div.bottom_menu > nav > li > a::after {
+body > div > footer > div > nav > li:nth-child(1) > a::after ,
+body > div > footer > div > nav > li:nth-child(2) > a::after ,
+body > div > footer > div > nav > li:nth-child(3) > a::after {
     content: "|";
-    padding: 0  7px;
+    padding: 0px  10px;
     color: white;
     font-size: 14px;
   }
@@ -398,6 +406,5 @@ body > div.wrapper > footer > div.bottom_menu > nav > li > a::after {
 body > div > footer > div > nav > div {
   padding: 14px;
   color: #554047;
-  font-size: 12px;
-
+  font-size: 10px;
 }
