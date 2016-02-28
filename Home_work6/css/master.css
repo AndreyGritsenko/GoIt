@@ -179,9 +179,11 @@ body > div.wrapper > div.filter > section.filter_avto {
   border: 1px solid #b4b4b4;
   vertical-align: top;
   width: 45.5%;
-  height: 132px;
+  height: 133px;
 }
+
 /*Голова*/
+
 body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_header {
   color: #154467;
   text-align: left;
@@ -196,10 +198,9 @@ body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_header >
   padding: 0px 46px 0px 63px;
   font-size: 14px;
 }
-body > div.wrapper > div.filter > section.filter_avto > div > div {
-  display: inline-block;
-  vertical-align: top;
-}
+
+/*Тело*/
+
 body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_body > div > p {
   color: #000000;
   font-size: 10px;
@@ -216,23 +217,33 @@ body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_body > d
   font-size: 10px;
   padding: 0px 0px 0px 0px;
 }
-body > div > div.filter > section.filter_avto > div > div {
+body > div.wrapper > div.filter > section.filter_avto > div > div {
   display: inline-block;
-  width: 23%;
   vertical-align: top;
+  width: 23%;
   margin-top: 0px;
   padding: 0px 0px 0px 0px;
 }
-body > div > div.filter > section.filter_avto > div.filter_avto_body > div.filter_avto_body_column-disk > p > select {
+body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_body > div.filter_avto_body_column-disk > p > select {
   padding: 0px 0px 0 0px;
   vertical-align: inherit;
 }
+body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_body > div > select:nth-child(3) {
+  width: 56px;
+}
+body > div.wrapper > div.filter > section.filter_avto > div > div > select {
+  width: 100px;
+  font-size: 11px;
+  padding: 0px 0 0 0;
+  margin: 6px 0 0 0;
+}
+
 /*Ноги*/
+
 body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_footer {
   text-align: end;
   padding: 4px 17px 0 0;
   font-style: italic;
-
 }
 
 /*filter_tire*/
@@ -246,7 +257,67 @@ body > div.wrapper > div.filter > section.filter_tire {
   vertical-align: top;
   width: 21%;
   height: 133px;
-  overflow: auto;
+}
+
+/*Голова*/
+
+body > div.wrapper > div.filter > section.filter_tire > div.filter_tire_header {
+  color: #154467;
+  font-weight: bolder;
+  font-size: 11px;
+  display: inline-block;
+}
+body > div.wrapper > div.filter > section.filter_tire > div.filter_tire_header > span {
+  ;
+  margin: 0 0px 0 10px;
+  ;
+  font-size: 13px;
+}
+
+/*Тело*/
+
+body > div.wrapper > div.filter > section.filter_tire > div.filter_tire_body > div.filter_tire_body_column-first > p {
+  color: #000000;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 8px;
+  width: 73px;
+  padding: 13px 0px 0px 12px;
+}
+body > div.wrapper > div.filter > section.filter_tire > div > div {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+body > div.wrapper > div.filter > section.filter_tire > div.filter_tire_body > div > select {
+  width: 47px;
+  font-size: 11px;
+  margin: 7px 0 0 0;
+}
+body > div.wrapper > div.filter > section.filter_tire > div.filter_tire_body > div.filter_tire_body_column-first > p.radius {
+  text-align: -webkit-center;
+  ;
+}
+body > div.wrapper > div.filter > section.filter_tire > div.filter_tire_body > div.filter_tire_body_column-second > label > input {
+  height: 10px;
+  margin: 0;
+  vertical-align: bottom;
+}
+body > div.wrapper > div.filter > section.filter_tire > div.filter_tire_body > div.filter_tire_body_column-second > label {
+  display: inline-block;
+}
+body > div.wrapper > div.filter > section.filter_tire > div.filter_tire_body > div.filter_tire_body_column-second > label > span {
+  font-size: 11px;
+  ;
+}
+
+/*Ноги*/
+
+body > div.wrapper > div.filter > section.filter_tire > div.filter_tire_footer {
+  text-align: end;
+  padding: 0px 14px 0 0;
+  font-style: italic;
+  margin: -2px 0 0 0;
 }
 
 /*filter_disk*/
@@ -259,13 +330,96 @@ body > div.wrapper > div.filter > section.filter_disk {
   border: 1px solid #b4b4b4;
   vertical-align: top;
   width: 29%;
-  height: 134px;
-  overflow: auto;
+  height: 133px;
+}
+body > div > div.filter > section.filter_disk > span {
+  color: #154467;
+  font-weight: bolder;
+  font-size: 13px;
+  ;
+  margin: 1px 0px 0 9px;
+  letter-spacing: 1px;
+  display: block;
+  ;
+  ;
+}
+
+/*Тело*/
+
+body > div > div.filter > section.filter_disk > div.filter_disk_first-column > div {
+  margin: 3px 0 0 16px;
+  display: inline-block;
+  width: 34%;
+  vertical-align: top;
+  float: left;
+}
+body > div.wrapper > div.filter > section.filter_disk > div.filter_disk_first-column > div > span {
+  font-size: 11px;
+  vertical-align: top;
+  padding: 0px 0 0 0;
+  display: inline-block;
+  margin: 7px 0px 0 0;
+  font-weight: 700;
+  line-height: 8px;
+}
+body > div.wrapper > div.filter > section.filter_disk > div > div > span > span.gray {
+  font-size: 10px;
+  color: #77858b;
+  text-align: left;
+  font-size: 10px;
+  padding: 0px 0px 0px 0px;
+}
+body > div > div.filter > section.filter_disk > div.filter_disk_second-column {
+  display: inline-block;
+  width: 22%;
+  ;
+  float: left;
+}
+body > div.wrapper > div.filter > section.filter_disk > div.filter_disk_second-column > select {
+  width: 100%;
+  font-size: 11px;
+  margin-top: 15px;
+}
+body > div.wrapper > div.filter > section.filter_disk > div.filter_disk_second-column > select.disk_diameter {
+  margin-top: 6px;
+}
+body > div.wrapper > div.filter > section.filter_disk > div.filter_disk_second-column > select.holes-size {
+  margin-top: 16px;
+}
+body > div > div.filter > section.filter_disk > div.filter_disk_third-column {
+  float: right;
+  display: inline-block;
+  font-size: 11px;
+  width: 29%;
+  font-weight: 700;
+  line-height: 8px;
+  border-left: 2px solid gray;
+  margin: -9px 0 0 0;
+  padding: 0 0 0 10px;
+  ;
+}
+body > div.wrapper > div.filter > section.filter_disk > div.filter_disk_third-column > div > span.fixing-holes {
+  font-size: 11px;
+  margin-top: 7px;
+  display: inline-block;
+}
+body > div.wrapper > div.filter > section.filter_disk > div.filter_disk_third-column > div > select {
+  width: 75%;
+  margin-top: 2px;
+}
+body > div.wrapper > div.filter > section.filter_disk > div.filter_disk_footer {
+  float: right;
+  clear: both;
+  font-style: italic;
+  padding-right: 11px;
 }
 
 /*body columns*/
 
+
 /*Общие элементы меню*/
+
+
 /*Общий элемент для правого и левого меню - иконка диска*/
 
 body > div.wrapper > div.body > div > div > div > div > span::before {
@@ -333,10 +487,9 @@ body > div > div.body > div > div > div > div > span {
   border-radius: 15px;
   margin: 0px 0px 0px 0px;
   width: 79%;
-  margin-top: 0px;
   font-size: 13px;
   line-height: 1;
-  margin-bottom: 0px;
+  margin-top: 1px;
 }
 
 /*left-column*/
@@ -469,7 +622,7 @@ body > div.wrapper > div.body > div > div.content > div.row > div > p {
   font-size: 15px;
   font-style: italic;
   font-weight: 900;
-  padding-top: 3px;
+  padding-top: 4px;
   line-height: 1;
   ;
 }
@@ -514,17 +667,9 @@ body > div > footer > div > nav > div {
   color: #554047;
   font-size: 10px;
 }
-
-
-body > div.wrapper > div.filter > section > div > div > select {
+select.tire_size {
   padding: 0px 0 0 0;
   width: 100px;
   font-size: 11px;
   margin-top: 6px;
-}
-
-
-
-body > div.wrapper > div.filter > section > div > div > select:nth-child(3) {
-  width: 56px;
 }
