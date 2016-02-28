@@ -1,34 +1,43 @@
 /*clearfix для плавающих элементов*/
+
 .clearfix:after {
   display: inline-block;
   content: "";
   clear: both;
 }
+
 /*Обортка для первой линии*/
+
 body > div {
   margin: 16px auto;
   width: 909px;
   font-family: Arial, sans-serif;
 }
+
 /*Раздел с телефонами*/
+
 body > div > header > div.tel {
   display: inline-block;
   font-size: 17px;
   letter-spacing: 0.9px;
   color: #5e696d;
   margin: 7px 0px 0px 5px;
-  vertical-align: bottom;;
+  vertical-align: bottom;
+  ;
 }
 body > div > header > div.tel > p > img {
   vertical-align: middle;
 }
+
 /*Раздел авторизации/регистрации*/
+
 body > div > header > div.avtorization {
   display: inline-block;
   box-sizing: border-box;
   border-radius: 3px;
   background-color: #114266;
-  box-shadow: 3px 3px 3px #b4b4b4;;
+  box-shadow: 3px 3px 3px #b4b4b4;
+  ;
   margin: 2px 0px 0px 14px;
   vertical-align: top;
 }
@@ -61,18 +70,22 @@ body > div > header > div.avtorization > form > input.login, .password {
 body > div > header > div.avtorization > nav > li > a {
   text-decoration: none;
   color: white;
-  }
-  /*Разделитель между входом и регистрацтей*/
-body > div.wrapper > header > div.avtorization > nav > li:nth-child(1):after{
-    content: " | ";
-    color: white;
-    font-size: 11px;
-  }
-  /*Подчеркивание "забыли пароль"*/
+}
+
+/*Разделитель между входом и регистрацтей*/
+
+body > div.wrapper > header > div.avtorization > nav > li:nth-child(1):after {
+  content: " | ";
+  color: white;
+  font-size: 11px;
+}
+
+/*Подчеркивание "забыли пароль"*/
+
 body > div.wrapper > header > div.avtorization > nav > li:nth-child(3) {
-    text-decoration: underline;
-    padding: 0px 9px 0 8px;
-  }
+  text-decoration: underline;
+  padding: 0px 9px 0 8px;
+}
 body > div > header > div.mapsite {
   display: inline-block;
   margin: 0px 0px 0px 12px;
@@ -85,22 +98,27 @@ body > div > header > div.mapsite {
 body > div > header > div.mapsite > a {
   padding: 0px 3px;
 }
+
 /*Главное лого*/
+
 body > div.wrapper > div.logo {
   margin-top: 10px;
 }
+
 /*Главное меню*/
+
 body > div.wrapper > div.main_nav > nav {
   margin: 3px auto;
-  /* width: 559px; */;
+  /* width: 559px; */
+  ;
   position: relative;
 }
-body > div.wrapper > div.main_nav > nav > menu  {
+body > div.wrapper > div.main_nav > nav > menu {
   height: 30px;
   text-align: right;
   box-shadow: 0px 0px 5px #505860, inset 0px 5px 5px #797979;
   border-radius: 5px;
-  background: linear-gradient(#2d3236 0% ,#000000 100%);
+  background: linear-gradient(#2d3236 0%, #000000 100%);
   padding: 2px 0px;
   line-height: 25px;
 }
@@ -111,7 +129,9 @@ body > div.wrapper > div.main_nav > nav > menu > li {
   text-align: center;
   padding: 0px 0px 0px 0px;
 }
+
 /*картинка корзтны*/
+
 body > div > div.main_nav > nav > menu > div > a > img {
   border: none;
   position: relative;
@@ -127,10 +147,12 @@ body > div.wrapper > div.main_nav > nav > menu > li > a {
   font-size: 14px;
 }
 body > div.wrapper > div.main_nav > nav > menu > li > a:hover {
-  background: linear-gradient(#1f6787 0% ,#0c3357 100%);
+  background: linear-gradient(#1f6787 0%, #0c3357 100%);
   border-radius: 15px;
 }
+
 /*Корзина со стоимостью*/
+
 body > div > div.main_nav > nav > menu > div {
   display: inline-block;
   padding: 0px 20px 0px 56px;
@@ -143,20 +165,78 @@ body > div > div.main_nav > nav > menu > div > a {
 body > div > div.main_nav > nav > menu > div > a > span {
   color: #0d5a8f;
 }
+
 /*filter*/
+
+
 /*filter_avto*/
+
 body > div.wrapper > div.filter > section.filter_avto {
   display: inline-block;
-  margin: 9px 0px 0px 4px;
+  margin: 8px 0px 0px 4px;
   box-shadow: 3px 3px 3px #b4b4b4;
   border-radius: 15px;
   border: 1px solid #b4b4b4;
   vertical-align: top;
   width: 45.5%;
   height: 132px;
-  overflow: auto;
 }
+/*Голова*/
+body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_header {
+  color: #154467;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 11px;
+  display: inline-block;
+}
+body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_header > span {
+  padding: 0px 0px 0px 21px;
+}
+body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_header > span.search-by-avto {
+  padding: 0px 46px 0px 63px;
+  font-size: 14px;
+}
+body > div.wrapper > div.filter > section.filter_avto > div > div {
+  display: inline-block;
+  vertical-align: top;
+}
+body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_body > div > p {
+  color: #000000;
+  font-size: 10px;
+  0: 0;
+  padding: 0px 0px 0px 0;
+  font-weight: 700;
+  line-height: 8px;
+  margin: 9px 0 0px 17px;
+  width: 73px;
+}
+body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_body > div > p > span {
+  color: #77858b;
+  text-align: left;
+  font-size: 10px;
+  padding: 0px 0px 0px 0px;
+}
+body > div > div.filter > section.filter_avto > div > div {
+  display: inline-block;
+  width: 23%;
+  vertical-align: top;
+  margin-top: 0px;
+  padding: 0px 0px 0px 0px;
+}
+body > div > div.filter > section.filter_avto > div.filter_avto_body > div.filter_avto_body_column-disk > p > select {
+  padding: 0px 0px 0 0px;
+  vertical-align: inherit;
+}
+/*Ноги*/
+body > div.wrapper > div.filter > section.filter_avto > div.filter_avto_footer {
+  text-align: end;
+  padding: 4px 17px 0 0;
+  font-style: italic;
+
+}
+
 /*filter_tire*/
+
 body > div.wrapper > div.filter > section.filter_tire {
   display: inline-block;
   margin: 8px 0px 0px 9px;
@@ -168,7 +248,9 @@ body > div.wrapper > div.filter > section.filter_tire {
   height: 133px;
   overflow: auto;
 }
+
 /*filter_disk*/
+
 body > div.wrapper > div.filter > section.filter_disk {
   display: inline-block;
   margin: 8px 0px 0px 6px;
@@ -182,20 +264,25 @@ body > div.wrapper > div.filter > section.filter_disk {
 }
 
 /*body columns*/
+
 /*Общие элементы меню*/
 /*Общий элемент для правого и левого меню - иконка диска*/
+
 body > div.wrapper > div.body > div > div > div > div > span::before {
   background-image: url(../pic/icon-disk.png);
   content: "";
   width: 23px;
   height: 23px;
   background-repeat: no-repeat;
-  display: inline-block;;
+  display: inline-block;
+  ;
   padding: 0px 2px;
   vertical-align: middle;
   margin-top: -1px;
 }
+
 /*Общий элемент для правого и левого меню - иконка каталога*/
+
 body > div.wrapper > div.body > div > div > div > span::before {
   background-image: url(../pic/icon-katalog.png);
   content: "";
@@ -205,9 +292,12 @@ body > div.wrapper > div.body > div > div > div > span::before {
   display: inline-block;
   padding: 0px 2px;
   vertical-align: middle;
-  margin-top: 0px;;
+  margin-top: 0px;
+  ;
 }
+
 /*Общий установки блока панелей слева-справа*/
+
 body > div.wrapper > div.body > div > div {
   background-color: #edeef0;
   padding: 0px;
@@ -215,11 +305,12 @@ body > div.wrapper > div.body > div > div {
   font-size: 14px;
   font-weight: 500;
   width: 20%;
-  margin: 22px 0px 0px 0px;
+  margin: 19px 0px 0px 0px;
 }
+
 /*Общий блок обводки загаловков*/
-body > div > div.body > div > div.left-menu > div > span,
-body > div > div.body > div > div.right-menu > div > span {
+
+body > div > div.body > div > div.left-menu > div > span, body > div > div.body > div > div.right-menu > div > span {
   display: inline-block;
   padding: 2px 2px;
   border: 1px solid #b4b4b4;
@@ -232,7 +323,9 @@ body > div > div.body > div > div.right-menu > div > span {
   font-size: 13px;
   line-height: 1;
 }
+
 /*Общий блок обводки подзагаловков*/
+
 body > div > div.body > div > div > div > div > span {
   display: inline-block;
   padding: 2px 2px;
@@ -246,8 +339,8 @@ body > div > div.body > div > div > div > div > span {
   margin-bottom: 0px;
 }
 
-
 /*left-column*/
+
 body > div.wrapper > div.body > div > div.left-menu {
   float: left;
 }
@@ -270,6 +363,7 @@ body > div.wrapper > div.body > div > div.left-menu > div > div > ul > li > a {
 }
 
 /*right-column*/
+
 body > div.wrapper > div.body > div > div.right-menu {
   float: right;
 }
@@ -277,72 +371,81 @@ body > div.wrapper > div.body > div > div.right-menu > div > div > label {
   display: block;
   font-size: 12px;
   padding: 4px 0px 0px 23px;
-  line-height: 1.6;;
+  line-height: 1.6;
+  ;
 }
 body > div.wrapper > div.body > div > div.right-menu > div > div.right-menu_subheader_disk {
-padding-top: 8px;
+  padding-top: 8px;
 }
 
+/*Дополнительное выравнивание подзаголовков*/
 
-body > div > div.body > div > div.right-menu > div > div.right-menu_subheader_tire > span,
-body > div > div.body > div > div.right-menu > div > div.right-menu_subheader_disk > span {
+body > div > div.body > div > div.right-menu > div > div.right-menu_subheader_tire > span, body > div > div.body > div > div.right-menu > div > div.right-menu_subheader_disk > span {
   margin: 0px 0px 0px 16px;
   width: 71%;
 }
-.button-blue{
-   text-decoration:none;
-   text-align:center;
-   padding:7px 13px;
-   border:none;
-   -webkit-border-radius:15px;
-   -moz-border-radius:15px;
-   border-radius: 15px;
-   font:11px Arial, Helvetica, sans-serif;
-   color:#ffffff;
-   background-color:#1f6887;
-   background-image: -moz-linear-gradient(top, #1f6887 0%, #0d365a 100%);
-   background-image: -webkit-linear-gradient(top, #1f6887 0%, #0d365a 100%);
-   background-image: -o-linear-gradient(top, #1f6887 0%, #0d365a 100%);
-   background-image: -ms-linear-gradient(top, #1f6887 0% ,#0d365a 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d365a', endColorstr='#0d365a',GradientType=0 );
-   background-image: linear-gradient(#1f6887 0% ,#0d365a 100%);
-   -moz-box-shadow: 2px 2px 4px #bababa,  inset 0px 0px 3px #ffffff;
-   box-shadow:2px 2px 4px #bababa, inset 0px 0px 3px #ffffff;
-   margin:15px 24px;
-  }
+
+/*Кнопка*/
+
+body > div.wrapper > div.body > div > div.right-menu > div > input {
+  text-decoration: none;
+  text-align: center;
+  padding: 7px 13px;
+  border: none;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background-color: #1f6887;
+  background-image: -moz-linear-gradient(top, #1f6887 0%, #0d365a 100%);
+  background-image: -webkit-linear-gradient(top, #1f6887 0%, #0d365a 100%);
+  background-image: -o-linear-gradient(top, #1f6887 0%, #0d365a 100%);
+  background-image: -ms-linear-gradient(top, #1f6887 0%, #0d365a 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0d365a', endColorstr='#0d365a', GradientType=0);
+  background-image: linear-gradient(#1f6887 0%, #0d365a 100%);
+  -moz-box-shadow: 2px 2px 4px #bababa, inset 0px 0px 3px #ffffff;
+  box-shadow: 2px 2px 4px #bababa, inset 0px 0px 3px #ffffff;
+  margin: 15px 24px;
+}
 
 /*center-colon*/
+
 body > div.wrapper > div.body > div > div.content {
-  min-width:58%;
+  min-width: 58%;
   font-family: Tahoma;
-  background: linear-gradient(#e4e7e8 0% ,#93a7b0 100%);
+  background: linear-gradient(#e4e7e8 0%, #93a7b0 100%);
   color: #000;
-  max-width:58%;
-  margin:17px 0px 0px 11px;
-  display:-webkit-inline-box;
+  max-width: 58%;
+  margin: 17px 0px 0px 11px;
+  display: -webkit-inline-box;
   border-radius: 3px;
-  overflow:hidden;
-  font-size:14px;
-  padding:0px 0px 25px 0px;
-  text-align:center;
-  vertical-align:middle;
+  overflow: hidden;
+  font-size: 14px;
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+  vertical-align: middle;
 }
 body > div > div.body > div > div.content > div.row {
   display: inherit;
-  padding: 14px 0px 12px 0px;
+  padding: 14px 0px 14px 0px;
 }
 body > div.wrapper > div.body > div > div.content > div > div {
-  padding: 0px 21px 0px 12px;
+  padding: 0px 22px 0px 12px;
   text-align: center;
 }
 body > div.wrapper > div.body > div > div.content > div > div > h2 {
   color: #206988;
-  font-size: large;;
+  font-size: 16px;
+  ;
 }
 body > div.wrapper > div.body > div > div.content > div > div > h3 {
-  font-size: 13px;;
+  font-size: 13px;
+  ;
 }
+
 /*Белое окаймление товаров для рисунка*/
+
 body > div.wrapper > div.body > div > div.content > div.row > div > div {
   background: #fff 100%;
   width: 135px;
@@ -350,30 +453,35 @@ body > div.wrapper > div.body > div > div.content > div.row > div > div {
   display: inline-block;
   border-radius: 10px;
 }
+
 /*Картиинка*/
+
 body > div.wrapper > div.body > div > div.content > div > div > div > img {
   height: 94%;
-  padding-top: 4px;;
+  padding-top: 4px;
+  ;
 }
+
 /*Цена*/
+
 body > div.wrapper > div.body > div > div.content > div.row > div > p {
   color: #114165;
   font-size: 15px;
   font-style: italic;
   font-weight: 900;
   padding-top: 3px;
-  line-height: 1;;
+  line-height: 1;
+  ;
 }
 
 /*footer*/
+
 body > div > footer > img {
   display: inherit;
   margin: 35px 24px 25px 116px;
-
 }
 body > div.wrapper > footer > div.bottom_menu {
   margin: 0 auto;
-
 }
 body > div.wrapper > footer > div.bottom_menu > nav {
   height: 100px;
@@ -381,7 +489,7 @@ body > div.wrapper > footer > div.bottom_menu > nav {
   background: #213a4d;
   box-shadow: 2px 2px 5px #505860;
   padding-top: 10px;
-  }
+}
 body > div > footer > div.bottom_menu > nav > li {
   text-align: center;
   display: inline;
@@ -392,19 +500,31 @@ body > div.wrapper > footer > div.bottom_menu > nav > li > a {
   color: white;
   padding: 0px 0px;
 }
-body > div > footer > div > nav > li:nth-child(1) > a::after ,
-body > div > footer > div > nav > li:nth-child(2) > a::after ,
-body > div > footer > div > nav > li:nth-child(3) > a::after {
-    content: "|";
-    padding: 0px  10px;
-    color: white;
-    font-size: 14px;
-  }
-  body > div.wrapper > footer > div.bottom_menu > nav > li > a:hover {
-    color: #448ca8;
-  }
+body > div > footer > div > nav > li:nth-child(1) > a::after, body > div > footer > div > nav > li:nth-child(2) > a::after, body > div > footer > div > nav > li:nth-child(3) > a::after {
+  content: "|";
+  padding: 0px 10px;
+  color: white;
+  font-size: 14px;
+}
+body > div.wrapper > footer > div.bottom_menu > nav > li > a:hover {
+  color: #448ca8;
+}
 body > div > footer > div > nav > div {
   padding: 14px;
   color: #554047;
   font-size: 10px;
+}
+
+
+body > div.wrapper > div.filter > section > div > div > select {
+  padding: 0px 0 0 0;
+  width: 100px;
+  font-size: 11px;
+  margin-top: 6px;
+}
+
+
+
+body > div.wrapper > div.filter > section > div > div > select:nth-child(3) {
+  width: 56px;
 }
