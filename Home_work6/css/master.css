@@ -51,8 +51,8 @@ body > div > header > div.avtorization > div > img {
 }
 body > div > header > div.avtorization > nav {
   display: inline-block;
-  vertical-align: middle;
-  margin: 3px;
+  vertical-align: baseline;
+  margin: 0px;
 }
 body > div > header > div.avtorization > nav > li {
   display: inherit;
@@ -67,28 +67,41 @@ body > div > header > div.avtorization > form > input.login, .password {
   font-size: 12px;
   padding-left: 2px;
 }
+body > div > header > div.avtorization > form > nav {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 3px;
+  font-size: 12px;
+  padding-left: 2px;
+}
+body > div > header > div.avtorization > form > nav > li > a {
+  color: white;
+  text-decoration: none;
+}
 body > div > header > div.avtorization > nav > li > a {
   text-decoration: none;
   color: white;
+  padding-right: 8px;
 }
 
 /*Разделитель между входом и регистрацтей*/
 
-body > div.wrapper > header > div.avtorization > nav > li:nth-child(1):after {
+body > div > header > div.avtorization > form > nav> li:after {
   content: " | ";
   color: white;
   font-size: 11px;
+  padding: 0 0 0 3px;
 }
 
 /*Подчеркивание "забыли пароль"*/
 
-body > div.wrapper > header > div.avtorization > nav > li:nth-child(3) {
+body > div.wrapper > header > div.avtorization > nav > li:nth-child(2) {
   text-decoration: underline;
-  padding: 0px 9px 0 8px;
+  paddinggray; 9px 0 8px;
 }
 body > div > header > div.mapsite {
   display: inline-block;
-  margin: 0px 0px 0px 12px;
+  margin: 0px 0px 0px 10px;
   box-shadow: 3px 3px 3px #b4b4b4;
   border-radius: 15px;
   padding: 3px 4px;
@@ -454,7 +467,6 @@ body > div.wrapper > div.body > div > div > div > span::before {
 /*Общий установки блока панелей слева-справа*/
 
 body > div.wrapper > div.body > div > div {
-  background-color: #edeef0;
   padding: 0px;
   color: #114165;
   font-size: 14px;
@@ -567,40 +579,42 @@ body > div.wrapper > div.body > div > div.right-menu > div > input {
 
 body > div.wrapper > div.body > div > div.content {
   min-width: 58%;
-  font-family: Tahoma;
   background: linear-gradient(#e4e7e8 0%, #93a7b0 100%);
   color: #000;
-  max-width: 58%;
-  margin: 17px 0px 0px 11px;
-  display: -webkit-inline-box;
+  margin: 19px 0px 0px 11px;
+  display: -webkit-inline-box;;
   border-radius: 3px;
-  overflow: hidden;
   font-size: 14px;
   padding: 0px 0px 20px 0px;
   text-align: center;
   vertical-align: middle;
+  overflow: hidden;
 }
-body > div > div.body > div > div.content > div.row {
+
+body > div > div.body > div > div.content  {
   display: inherit;
   padding: 14px 0px 14px 0px;
 }
-body > div.wrapper > div.body > div > div.content > div > div {
+body > div.wrapper > div.body > div > div.content > div {
   padding: 0px 22px 0px 12px;
   text-align: center;
+  display: inline-block;
+  float: left;
+  margin: 14px 0px 14px 6px;;
 }
-body > div.wrapper > div.body > div > div.content > div > div > h2 {
+body > div.wrapper > div.body > div > div.content > div > h2 {
   color: #206988;
   font-size: 16px;
   ;
 }
-body > div.wrapper > div.body > div > div.content > div > div > h3 {
+body > div.wrapper > div.body > div > div.content > div > h3 {
   font-size: 13px;
   ;
 }
 
 /*Белое окаймление товаров для рисунка*/
 
-body > div.wrapper > div.body > div > div.content > div.row > div > div {
+body > div.wrapper > div.body > div > div.content > div > div {
   background: #fff 100%;
   width: 135px;
   height: 127px;
@@ -618,7 +632,7 @@ body > div.wrapper > div.body > div > div.content > div > div > div > img {
 
 /*Цена*/
 
-body > div.wrapper > div.body > div > div.content > div.row > div > p {
+body > div.wrapper > div.body > div > div.content > div > p {
   color: #114165;
   font-size: 15px;
   font-style: italic;
