@@ -1,5 +1,6 @@
 // alert('Hello word');
 // console.log('hello console');
+function customPow () {
 var num = prompt('Введите число, которое будем возводить в степень:');
 num = +num;
 var exp = prompt('Введите степень, в которою будем возводить число');
@@ -20,3 +21,4 @@ function power(num, exp) {
     return(result);
 }
 console.log(power(num, exp));
+}
